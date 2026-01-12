@@ -3,18 +3,17 @@
 ## Stage 1: Initial Preference Elicitation
 The model is first prompted using a standard CoT approach to generate its most probable answer, which we denote as the top-choice candidate. This initial output reflects the model's raw preference over the full set.
 
-<img src="./img/IoT-1.png" alt="IoT-1" width="400" height="200">
-
+<img src="https://raw.githubusercontent.com/qasemii/Inclusion-of-Thought/main/img/IoT-1.jpg" alt="IoT-1" width="400">
 
 ## Stage 2: Second Plausibility Assessment
 We remove the initial (stage 1) selection option set and replace it with a neutral placeholder, "none of the options", yielding the modified option set. The model is then queried again on this modified MCQ, resulting in the second (stage 2) selection.
 
-<img src="./img/IoT-2.png" alt="IoT-2" width="400" height="200">
+<img src="https://raw.githubusercontent.com/qasemii/Inclusion-of-Thought/main/img/IoT-2.jpg" alt="IoT-1" width="400">
 
 ## Stage 3: Confined Final Inference
 The framework then constructs a reduced MCQ consisting solely of the two most plausible model-selected candidates. This reframed question sharply reduces the model's cognitive load (i.e. model's preference instability in the presence of distractor options) and focuses the reasoning process on its own shortlisted alternatives. 
 
-<img src="./img/IoT-3.png" alt="IoT-3" width="400" height="200">
+<img src="https://raw.githubusercontent.com/qasemii/Inclusion-of-Thought/main/img/IoT-3.jpg" alt="IoT-1" width="400">
 
 
 
